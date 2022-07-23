@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "node-schedule": "^2.1.0",
+    "snoowrap": "^1.23.0"
+  }
+}
