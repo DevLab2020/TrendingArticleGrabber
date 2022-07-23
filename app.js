@@ -14,11 +14,11 @@ var timeRange='6 hours';
 var postLimit=3;
 
 function archiveData(json){
-	let jsonImport = fs.readFileSync('tagbot/datadumpARCHIVES.json');
+	let jsonImport = fs.readFileSync('datadumpARCHIVES.json');
 	newData = JSON.parse(jsonImport);
 	newData.push(json);
 	let jsonData = JSON.stringify(newData,null,2);
-	fs.writeFileSync('tagbot/datadumpARCHIVES.json',jsonData);
+	fs.writeFileSync('datadumpARCHIVES.json',jsonData);
 }
 
 async function scrapeSubreddit(sub) {
@@ -36,7 +36,7 @@ async function scrapeSubreddit(sub) {
 		})
 	archiveData(data);
 	let json = JSON.stringify(data,null,2)
-	fs.writeFileSync('tagbot/datadump-'+sub+'.json',json);
+	fs.writeFileSync('datadump-'+sub+'.json',json);
 	});
 };
 
