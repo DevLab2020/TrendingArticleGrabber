@@ -11,7 +11,7 @@ After scraping data(thumbnail url, post text, score, post url, comments url, and
 
 You must have a Reddit account and a developer app created already with a clientId, clientSecret, username, and password available.
 
-You will have to have NPM installed, or manually install required packages( node-schedule & snoowrap ) in package.lock
+You will have to have NPM installed, or manually install required packages( node-schedule & snoowrap ) found in package.lock
 
 # Installation
 
@@ -27,6 +27,6 @@ run the app with the command: node app.js
 
 1. Add a function to check whether or not the post has been captured before, and if so, do not add it to the archive post.
 
-1.a. if this is the case, possibly add a rescrape function to decrease the timerange and/or method(top to rising) in order to for sure capture new content.
+  1. if this is the case, possibly add a rescrape function to decrease the timerange and/or method(top to rising) in order to for sure capture new content.
 
 2. Scrape top comment
