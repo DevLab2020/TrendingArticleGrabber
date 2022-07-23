@@ -27,5 +27,5 @@ run the app with the command: node app.js
 
 1. Organize datadumps into datadump directory.
 2. Add a function to check whether or not the post has been captured before, and if so, do not add it to the archive post.
-  1. if this is the case, possibly add a rescrape function to decrease the timerange and/or method(top to rising) in order to for sure capture new content.
+  a. if this is the case, possibly add a rescrape function to decrease the timerange and/or method(top to rising) in order to for sure capture new content.
 3. Scrape top comment
